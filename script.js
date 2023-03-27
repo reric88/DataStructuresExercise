@@ -96,9 +96,12 @@ const starWarsMovies = [
         episodeEight: 'The Last Jedi',
         episodeNine: 'Rise of Skywalker',
     },
-]
+];
 
 // B6b
-starWarsMovies.splice(1, 0, 'Solo', 'Rogue One')
+console.log(starWarsMovies.splice(1, 0, 'Solo', 'Rogue One'));
 
+prequels = starWarsMovies[0]
+starWarsMovies.shift();
+starWarsMovies.unshift(prequels, {solo: 'Solo', rogueOne: 'Rogue One'})
 console.log(starWarsMovies);
