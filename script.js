@@ -1,6 +1,7 @@
 // 1a
+const jedi = [];
 // 1b
-const jedi = ['Luke'];
+jedi[0] = 'Luke';
 
 // 1c
 console.log(jedi.push('Obi-Wan Kenobi'));
@@ -9,7 +10,8 @@ console.log(jedi.push('Obi-Wan Kenobi'));
 console.log(jedi.unshift('Yoda'));
 
 // 1e
-console.log(jedi.slice(1, 2));
+// console.log(jedi.slice(1, 2));
+console.log(jedi[1]);
 
 // 1f
 console.log(jedi.pop());
@@ -25,7 +27,7 @@ const sithLords = ['Darth Vader', 'Darth Sidious', 'Darth Maul'];
 const imperialOfficers = ['Grand Moff Tarkin', 'Orson Krennic'];
 
 // 2c
-starWarsVillains = sithLords.concat(imperialOfficers)
+starWarsVillains = sithLords.concat(imperialOfficers);
 
 console.log(starWarsVillains);
 
@@ -37,12 +39,15 @@ const droids = {
     astromech: 'R2-D2',
     protocol: 'C-3PO',
     assassin: 'IG-88',
-}
+};
 
 // 3b
 console.log(droids['astromech']);
 
+// 3c
 console.log(droids.protocol);
 
-// 3c
-console.log(dro
+// 3d
+droids.assassin = 'IG-11';
+droids['assassin'] = 'IG-11';
+console.log(droids);
